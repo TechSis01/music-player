@@ -49,11 +49,8 @@ function SearchBar() {
     )
       .then((response) => response.json())
       .then((data) => setTracks(data.tracks.items.splice(0, 4)));
-    console.log(tracks[0].album.images[1].url);
-    // .then(data => console.log(data.tracks.items[0].preview_url))
-
-    // display the albums
-    // console.log(`search for ${searchInput}`)
+    
+   
   }
   const SearchSongs = (e) => {
     setSearchInput(e.target.value);
@@ -69,6 +66,8 @@ function SearchBar() {
   function handlePlay(preview,image) {
     setCurrentTrack(preview)
     setTrackImage(image)
+    // const audioElement = document.getElementsByClassName("audio-container")[0].getElementsByTagName("audio")[0]
+    // audioElement.play()
   }
   return (
     <section>
@@ -84,7 +83,7 @@ function SearchBar() {
           <FiSearch />
           <input
             type="text"
-            placeholder="search for songs..."
+            placeholder="search for songs and press enter..."
             onChange={SearchSongs}
             onKeyDown={realSearch}
           ></input>
@@ -92,6 +91,7 @@ function SearchBar() {
       </div>
       <p className="whats-hot-p">What's hot &#x1F525;</p>
       <h2>Trending</h2>
+      <p className="whats-hot-p">Search for your favourite songs above</p>
       {tracks.map((track) => (
         <div
           className="track-container"
@@ -109,10 +109,11 @@ function SearchBar() {
         </div>
       ))}
       <div className="audio-container">
-        {/* <img src={trackImage} alt="track-image"></img> */}
-        <audio src={currentTrack} controls className="audio-container"></audio>
+        <audio src={currentTrack} autoplay controls className="audio-container"></audio>
       </div>
+      {/* <Tracks token={accessToken}/> */}
     </section>
+
   );
 }
 

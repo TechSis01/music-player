@@ -17,12 +17,12 @@ import Events from "./Pages/Events";
 import FaveSongs from "./Pages/FaveSongs";
 import Artist from "./Pages/Artist";
 import Albums from "./Pages/Albums";
-
+// import Login from "./Pages/Login";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<SideBarLayout />}>
-      <Route path="" index element={<Home />}></Route>
+      <Route path="" index  element={<Home />}></Route>
       <Route path="trends" element={<Trends />}></Route>
       <Route path="feed" element={<Feed />}></Route>
       <Route path="new" element={<New />}></Route>

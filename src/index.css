@@ -116,10 +116,13 @@ nav a{
 .input-box input{
   border:none;
   outline:none;
+  width:100%;
+  
 }
 ::placeholder{
   padding-left:1em;
   color:#eef0f2;
+
 }
 .arrow{
   color:#353535;
@@ -166,6 +169,10 @@ nav a{
   margin-top:1em;
   background-color: #fff;
   border-radius: 10px;
+}
+.track-container:hover{
+  background-color: #6c757d;
+  cursor:pointer;
 }
 .audio-container{
   /* background-color: #fff; */
