@@ -1,0 +1,180 @@
+*{
+ 
+  font-family: 'Montserrat', sans-serif;
+}
+html{
+  font-size:62.5%;
+}
+/* #root{
+  
+} */
+body{
+  font-size:1.6rem;
+  margin:0;
+  padding:0;
+}
+/* BODY */
+
+.main-body{
+  display:flex;
+  /* height:100vh; */
+}
+main{
+  flex-grow:1;
+}
+/* SIDE BAR */
+aside{
+  width:23%;
+}
+aside p{
+  color:#adb5bd;
+  font-size:1.3rem;
+}
+aside h5{
+  color:#6c757d;
+}
+.three-dots{
+  display:flex;
+  justify-content: space-between;
+  width:30%;
+}
+.circle{
+  width:20px;
+  height:20px;
+}
+#first-dot{
+  border-radius: 50%;
+  background-color:#d90429;
+}
+#second-dot{
+  border-radius: 50%;
+  background-color: #f77f00;
+}
+#third-dot{
+  border-radius: 50%;
+  background-color:#007200;
+}
+.brand-name span{
+  color:orange;
+}
+nav{
+  padding:2em 0em 2em 1em;
+}
+nav a{
+  text-decoration: none;
+  color:#6c757d;
+}
+.sidebar-links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width:80%; */
+  padding:0.5em;
+}
+.lady-img{
+  width:3rem;
+  border-radius: 50%;
+}
+.captari-tyers{
+  border-top: 1px solid #dee2e6;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* The react icons beside the side bar links */
+.icons{
+  padding-right:1em;
+}
+/* The active class when you click on a navlink */
+.active{
+  background-color:#000;
+  color:#fff;
+  width:100%;
+  padding:1em;
+  border-radius: 5px;
+}
+.homepage{
+  display:grid;
+  grid-template-columns: 65% 35%;
+  background-color: #eef0f2;
+  padding:2em;
+}
+/* =====================TRENDING SECTION =================================== */
+.search-bar-container{
+  display:flex;
+  margin-top:1em;
+  align-items: center;
+  justify-content: space-around;
+}
+.input-box{
+  width:80%;
+  background-color: #fff;
+  border-radius: 30px;
+  height:40px;
+  display: flex;
+  align-items: center;
+  padding-left:2em;
+}
+.input-box input{
+  border:none;
+  outline:none;
+}
+::placeholder{
+  padding-left:1em;
+  color:#eef0f2;
+}
+.arrow{
+  color:#353535;
+}
+.trending-section{
+  padding-right:2em;
+}
+.whats-hot-p{
+  font-size:1.2rem;
+  color:#6c757d;
+}
+/* =====================SHORTCUT SECTION==================================== */
+.fave-artist{
+  display:flex;
+  font-size:1.3rem;
+}
+.fave-artist p:nth-child(1){
+  font-weight: bold;
+}
+.fave-artist p:nth-child(2){
+  color:#6c757d ;
+}
+.fave-artist img{
+  width:50px;
+  border-radius: 100%;
+  padding:1em;
+}
+.emojis{
+  background-color: #fff;
+  margin:1em;
+  padding:0.8em;
+  border-radius: 30px;
+  font-size:1.3rem;
+}
+.emoji-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ==============TRACK CONTAINER================== */
+.track-container{
+  display:flex;
+  gap:4.0rem;
+  margin-top:1em;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.audio-container{
+  /* background-color: #fff; */
+  margin-top:2em;
+  width:100%;
+  display: flex;
+  border-radius: 30px;
+}
+.audio-container img{
+  width:70px;
+  border-radius: 50%;
+}
